@@ -44,7 +44,7 @@ class BottleOfWine(BaseDrug):
 class RnaVaccin(BaseDrug):
 
     def __init__(self, days_until_expiration: int, efficiency_percentage: int) -> None:
-        super().__init__("ARN Vaccin", days_until_expiration, efficiency_percentage)
+        super().__init__("ARN vaccine", days_until_expiration, efficiency_percentage)
 
     def _degrade_efficiency_unexpired(self):
         self.efficiency_percentage -= 2

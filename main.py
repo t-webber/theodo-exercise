@@ -14,7 +14,7 @@ class InventoryTest:
             Drug("Insulin vial", 15, 20),
             Drug("Insulin vial", 10, 49),
             Drug("Insulin vial", 5, 49),
-            Drug("ARN Vaccine", 3, 6),
+            Drug("ARN vaccine", 3, 6),
         ]
 
         inventory = Inventory(items)
@@ -51,9 +51,9 @@ class InventoryTest:
         assert items[7].use_before == 4
         assert items[7].efficiency == 46
 
-        assert items[8].name == "ARN Vaccine"
+        assert items[8].name == "ARN vaccine"
         assert items[8].use_before == 2
-        assert items[8].efficiency == 5
+        assert items[8].efficiency == 4
 
 
 if __name__ == "__main__":

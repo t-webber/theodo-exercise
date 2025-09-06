@@ -1,4 +1,4 @@
-from .drugs import InsulinVial, GrannyRecipe, BottleOfWine
+from .drugs import InsulinVial, GrannyRecipe, BottleOfWine, RnaVaccin
 from .base_drug import BaseDrug
 
 class Drug:
@@ -14,6 +14,8 @@ class Drug:
                 return GrannyRecipe(days_until_expiration, efficiency_percentage)
             case "Old bottle of wine":
                 return BottleOfWine(days_until_expiration, efficiency_percentage)
+            case "ARN vaccine":
+                return RnaVaccin(days_until_expiration, efficiency_percentage)
             case _:
                 return BaseDrug(name, days_until_expiration, efficiency_percentage)
 
