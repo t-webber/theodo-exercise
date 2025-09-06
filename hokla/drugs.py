@@ -1,7 +1,7 @@
-from drug import Drug
+from base_drug import BaseDrug
 
 
-class InsulineVial(Drug):
+class InsulinVial(BaseDrug):
 
     def __init__(self, days_until_expiration: int, efficiency_percentage: int) -> None:
         super().__init__("Insulin vial", days_until_expiration, efficiency_percentage)
@@ -17,7 +17,7 @@ class InsulineVial(Drug):
             self.efficiency_percentage -= 1
 
 
-class GrannyRecipe(Drug):
+class GrannyRecipe(BaseDrug):
 
     def __init__(self, days_until_expiration: int, efficiency_percentage: int) -> None:
         super().__init__("Granny recipe", days_until_expiration, efficiency_percentage)
@@ -30,7 +30,7 @@ class GrannyRecipe(Drug):
 
 
 
-class BottleOfWine(Drug):
+class BottleOfWine(BaseDrug):
 
     def __init__(self, days_until_expiration: int, efficiency_percentage: int) -> None:
         super().__init__("Old bottle of wine", days_until_expiration, efficiency_percentage)
@@ -41,7 +41,7 @@ class BottleOfWine(Drug):
 
 
 
-class RnaVaccin(Drug):
+class RnaVaccin(BaseDrug):
 
     def __init__(self, days_until_expiration: int, efficiency_percentage: int) -> None:
         super().__init__("ARN Vaccin", days_until_expiration, efficiency_percentage)

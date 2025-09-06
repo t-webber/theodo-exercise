@@ -1,3 +1,11 @@
+"""
+Attention au correcteur
+
+Ce fichier ne devrait pas être push, mais je le push pour que vous puissiez faire
+marcher les tests de refactoring.
+"""
+
+
 # -*- coding: utf-8 -*-
 class Inventory(object):
   def __init__(self, drugs):

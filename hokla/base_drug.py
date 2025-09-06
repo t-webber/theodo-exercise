@@ -1,9 +1,28 @@
-class Drug:
+class BaseDrug:
+    """
+    Core logic common to every drug, and the default logic
+    """
 
     def __init__(self, name: str, days_until_expiration: int, efficiency_percentage: int) -> None:
         self.name: str = name
         self.days_until_expiration: int = days_until_expiration
         self.efficiency_percentage: int = efficiency_percentage
+
+    @property
+    def use_before(self) -> int:
+        return self.days_until_expiration
+
+    @use_before.setter
+    def use_before(self, days_until_expiration: int) -> None:
+                self.days_until_expiration = days_until_expiration
+
+    @property
+    def efficiency(self) -> int:
+        return self.efficiency_percentage
+
+    @efficiency.setter
+    def efficiency(self, efficiency_percentage: int) -> None:
+        self.efficiency_percentage = efficiency_percentage
 
     def __repr__(self):
         return f"{self.name}, {self.days_until_expiration}, {self.efficiency_percentage}"
