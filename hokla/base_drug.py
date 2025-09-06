@@ -40,7 +40,7 @@ class BaseDrug:
         """
         self.days_until_expiration -= 1
 
-    def update_efficiency_percentage(self) -> None:
+    def update_efficiency(self) -> None:
         """
         Updates the efficiency_percentage of a self after one more more.
         """

@@ -1,4 +1,4 @@
-from base_drug import BaseDrug
+from .base_drug import BaseDrug
 
 
 class InsulinVial(BaseDrug):

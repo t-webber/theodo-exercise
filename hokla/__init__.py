@@ -1,2 +1,2 @@
-from drug import Drug
-from inventory import Inventory
+from .drug import Drug
+from .inventory import Inventory
